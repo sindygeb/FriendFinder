@@ -1,0 +1,8 @@
+body {
+    background-image: url("https://cdn.vox-cdn.com/thumbor/VIqV2Ix3mKWdclLv37pQe6agEzc=/0x142:2592x2086/1520x1013/filters:focal(0x142:2592x2086):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/40348734/friendscast.0.0.jpg");
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif; 
+}
