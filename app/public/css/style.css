@@ -1,0 +1,17 @@
+body {
+    background-color: azure;
+    width: 960px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif; 
+}
+
+form {
+    padding: 10px;
+}
+
+.audios {
+    display: none;
+}

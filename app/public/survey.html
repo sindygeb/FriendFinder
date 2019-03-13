@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Links to script/CSS files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <title>Friend Finder</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron">
+        <h1>Survey Questions</h1>
+        <h4>Answer honestly, with 1 = Strongly Disagree, and 5 = Strongly Agree.</h4>
+    </div>
+
+    <form>
+        <h2>About You</h2>
+        <br>
+        <div class="form-group">
+            <label for="inputName">Enter your name (Required)</label>
+            <input type="name" class="form-control" id="userName" aria-describedby="nameHelp" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <label for="photoLink">Link Your Photo (Required)</label>
+            <input type="link" class="form-control" id="userPhoto" placeholder="Link Your Photo">
+        </div>
+        <br>
+        <hr>
+
+        <br>
+
+        <div class="form-group">
+            <h3>Question 1</h3>
+            <label for="exampleFormControlSelect1">You believe Cleanliness is next to Godliness.</label>
+            <select class="form-control" id="question1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 2</h3>
+            <label for="exampleFormControlSelect1">If you saw someone you were attracted to at a bar, you would approach confidently.</label>
+            <select class="form-control" id="question2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 3</h3>
+            <label for="exampleFormControlSelect1">You often find yourself daydreaming, and getting lost in your thoughts.</label>
+            <select class="form-control" id="question3">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 4</h3>
+            <label for="exampleFormControlSelect1">You have a strong love of cats.</label>
+            <select class="form-control" id="question4">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 5</h3>
+            <label for="exampleFormControlSelect1">You prefer to spend the rest of your life in a big, loud city.</label>
+            <select class="form-control" id="question5">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 6</h3>
+            <label for="exampleFormControlSelect1">You believe strongly in brand names, and the higher you pay for something, the better it is.</label>
+            <select class="form-control" id="question6">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 7</h3>
+            <label for="exampleFormControlSelect1">You love expanding your knowledge and studying about the past.</label>
+            <select class="form-control" id="question7">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 8</h3>
+            <label for="exampleFormControlSelect1">One of your goals in life is to have a big family.</label>
+            <select class="form-control" id="question8">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 9</h3>
+            <label for="exampleFormControlSelect1">It is often difficult for you to relate to other peoples’ feelings.</label>
+            <select class="form-control" id="question9">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 10</h3>
+            <label for="exampleFormControlSelect1">You prefer to get coffee at a small, local cafe rather than a big chain coffee shop.</label>
+            <select class="form-control" id="question10">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="modal1" id="submitButton">Find My Friend!</button>
+    </form>
+    <hr>
+
+    <a href="/api/friends">Friend Finder API</a> | <a href="#">GitHub Repo</a>
+
+    <br>
+
+    <br>
+
+    <!-- Modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal1">
+        <div class="modal-dialog" role="document">
+            <!-- Modal Content -->
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Closest Friend Match</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 id="userMatch"></h5>
+                <img id="userMatchImage" width="400" src="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $("#submitButton").on("click", function(event) {
+            event.preventDefault();
+
+            // grab the form elements
+            var userInput = {
+                    name: $('#userName').val().trim(),
+                    photo: $('#userPhoto').val().trim(),
+                    scores:[
+                        $('#question1').val().trim(),
+                        $('#question2').val().trim(),
+                        $('#question3').val().trim(),
+                        $('#question4').val().trim(),
+                        $('#question5').val().trim(),
+                        $('#question6').val().trim(),
+                        $('#question7').val().trim(),
+                        $('#question8').val().trim(),
+                        $('#question9').val().trim(),
+                        $('#question10').val().trim()
+                    ]
+                };
+
+            $.post('/api/friends', userInput)
+        .done(function(data) {
+            // Set the name and image values of friend match
+            $('#userMatch').html(data.matchName);
+            $("#userMatchImage").attr("src", data.matchImage);
+            // Pop open the modal dialog
+            $('#modal1').modal('show');
+        });
+    });
+
+    </script>
+</body>
+</html>
